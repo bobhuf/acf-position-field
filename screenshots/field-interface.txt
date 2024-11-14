@@ -1,0 +1,34 @@
+Position Grid Field Interface
+-------------------------
+
+Return Format Options:
+[x] Array (top-left, center-center, etc.)
+[ ] String (comma-separated positions)
+[ ] Custom Values
+
+Grid Interface:
++-------------------+
+|  ○   ○   ○       |  Top Row
+|  ○   ●   ○       |  Center Row (center dot selected)
+|  ○   ○   ○       |  Bottom Row
++-------------------+
+Legend: ○ = Unselected, ● = Selected
+
+Example Values:
+1. Single Position:
+   - Array: ['center-center']
+   - String: 'center-center'
+   - Custom: 'Centered Position'
+
+2. Multiple Positions:
+   - Array: ['top-left', 'top-right']
+   - String: 'top-left,top-right'
+   - Custom: ['Header Left', 'Header Right']
+
+Features:
+- Click dots to toggle positions
+- Multiple positions can be selected
+- Flexible return format options
+- Custom value override for each position
+- Accessible keyboard navigation
+- Visual feedback on hover and focus

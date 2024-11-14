@@ -1,0 +1,37 @@
+.acf-position-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-color: #e1e1e1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.acf-position-grid label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.acf-position-grid input[type=radio] {
+    margin: 0;
+}
+
+/* Hide screen reader text visually but keep it accessible */
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
